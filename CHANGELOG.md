@@ -1,5 +1,6 @@
 ## [Unreleased]
 ## Changed
+- Updated `php` with pattern version `~7.4||~8.0`.
 - [BC BREAK] Refactoring namespace to `MarfaTech`.
 
 ## [1.0.1] - 2021-03-02
