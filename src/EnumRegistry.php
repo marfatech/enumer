@@ -5,26 +5,27 @@ declare(strict_types=1);
 /*
  * This file is part of the Enumer package.
  *
- * (c) Wakeapp <https://wakeapp.ru>
+ * (c) MarfaTech <https://marfa-tech.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace Wakeapp\Component\Enumer;
+namespace MarfaTech\Component\Enumer;
 
+use MarfaTech\Component\Enumer\Exception\EnumNotRegisteredException;
 use ReflectionClass;
 use ReflectionException;
-use Wakeapp\Component\Enumer\Exception\EnumNotRegisteredException;
+
 use function array_change_key_case;
 use function array_combine;
 use function sprintf;
 
 class EnumRegistry
 {
-    const TYPE_ORIGINAL = 'Original';
-    const TYPE_COMBINE = 'Combine';
-    const TYPE_COMBINE_NORMALIZE = 'CombineNormalize';
+    public const TYPE_ORIGINAL = 'Original';
+    public const TYPE_COMBINE = 'Combine';
+    public const TYPE_COMBINE_NORMALIZE = 'CombineNormalize';
 
     /**
      * @var array[]

@@ -12,7 +12,7 @@ Enumer
 Откройте консоль и, перейдя в директорию проекта, выполните следующую команду для загрузки наиболее подходящей
 стабильной версии этого компонента:
 ```bash
-    composer require wakeapp/enumer
+    composer require marfatech/enumer
 ```
 *Эта команда подразумевает что [Composer](https://getcomposer.org) установлен и доступен глобально.*
 
@@ -22,9 +22,9 @@ Enumer
 ```php
 <?php
 
-use Wakeapp\Component\Enumer\Enumer;
-use Wakeapp\Component\Enumer\EnumRegistry;
-use Wakeapp\Component\Enumer\Example\GenderEnum;
+use MarfaTech\Component\Enumer\Enumer;
+use MarfaTech\Component\Enumer\EnumRegistry;
+use MarfaTech\Component\Enumer\Example\GenderEnum;
 
 $enumRegistry = new EnumRegistry();
 $enumRegistry->addEnum(GenderEnum::class);
