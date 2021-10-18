@@ -1,6 +1,7 @@
 ## [Unreleased]
 ## Changed
 - Updated `php` with pattern version `~7.4||~8.0`.
+- Updated composer name `wakeapp/enumer` to `marfatech/enumer`. 
 - [BC BREAK] Refactoring namespace to `MarfaTech`.
 
 ## [1.0.1] - 2021-03-02

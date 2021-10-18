@@ -15,6 +15,6 @@ namespace MarfaTech\Component\Enumer\Exception;
 
 use RuntimeException;
 
-class MarfatechEnumerException extends RuntimeException
+class MarfaTechEnumerException extends RuntimeException
 {
 }

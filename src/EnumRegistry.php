@@ -13,18 +13,19 @@ declare(strict_types=1);
 
 namespace MarfaTech\Component\Enumer;
 
+use MarfaTech\Component\Enumer\Exception\EnumNotRegisteredException;
 use ReflectionClass;
 use ReflectionException;
-use MarfaTech\Component\Enumer\Exception\EnumNotRegisteredException;
+
 use function array_change_key_case;
 use function array_combine;
 use function sprintf;
 
 class EnumRegistry
 {
-    const TYPE_ORIGINAL = 'Original';
-    const TYPE_COMBINE = 'Combine';
-    const TYPE_COMBINE_NORMALIZE = 'CombineNormalize';
+    public const TYPE_ORIGINAL = 'Original';
+    public const TYPE_COMBINE = 'Combine';
+    public const TYPE_COMBINE_NORMALIZE = 'CombineNormalize';
 
     /**
      * @var array[]

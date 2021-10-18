@@ -15,6 +15,6 @@ namespace MarfaTech\Component\Enumer\Example;
 
 class GenderEnum
 {
-    const MALE = 'Male';
-    const FEMALE = 'Female';
+    public const MALE = 'Male';
+    public const FEMALE = 'Female';
 }
